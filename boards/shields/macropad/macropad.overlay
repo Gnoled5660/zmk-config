@@ -54,9 +54,10 @@
 
 &i2c0 {
     status = "okay";
-    compatible = "nordic,nrf-twi";
-    sda-pin = <15>;
-    scl-pin = <14>;
+    // Hier verknüpfen wir jetzt deine oben definierten Custom-Pins (1.15 und 1.14)
+    pinctrl-0 = <&i2c0_default_custom>;
+    pinctrl-1 = <&i2c0_sleep_custom>;
+    pinctrl-names = "default", "sleep";
 
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
