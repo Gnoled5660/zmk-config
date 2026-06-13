@@ -22,7 +22,7 @@
             &bt BT_CLR &kp C_MUTE &kp PSCRN
             &kp LG(L) &kp LG(D) &trans 
             >;
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN.;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
